@@ -1,70 +1,84 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portafolio de PASEC 2025</title>
-    <style>
-      body {
-        font-family: system-ui, Arial, sans-serif;
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 0 16px;
-        line-height: 1.6;
-      }
-      header {
-        margin-bottom: 40px;
-      }
-      h1 {
-        margin-bottom: 0;
-      }
-      nav a {
-        margin-right: 12px;
-        text-decoration: none;
-        font-weight: 500;
-      }
-      section {
-        margin-bottom: 40px;
-      }
-      .card {
-        border: 1px solid #ddd;
-        border-radius: 12px;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Portafolio de PASEC 2025</h1>
-      <p>Proyectos, evidencias y documentación</p>
-      <nav>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#documentos">Documentos</a>
-        <a href="#contacto">Contacto</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-portafolio PASEC</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1>E-portafolio PASEC</h1>
+        <p><!-- TODO: Nombre completo · Carrera · Semestre --></p>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="producto.html">Producto</a>
+        <a href="ciudadania.html">Ciudadanía</a>
+        <a href="valores.html">Valores</a>
+        <a href="compromisos.html">Compromisos</a>
+        <a href="video.html">Video carta</a>
       </nav>
     </header>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="card">
-        <h3>Proyecto 1</h3>
-        <p>Descripción breve del proyecto.</p>
+    <section class="hero" id="contenido">
+      <h2>Ciudadanía responsable y aprendizaje en servicio</h2>
+      <p>
+        <!-- TODO: 2–4 líneas: objetivo del portafolio + organización + población con la que trabajaste -->
+      </p>
+      <div class="meta" style="margin-top:10px;">
+        <span class="badge">Organización: <!-- TODO --></span>
+        <span class="badge">Grupo atendido: <!-- TODO --></span>
+        <span class="badge">Horas de servicio: <!-- TODO --></span>
       </div>
     </section>
 
-    <section id="documentos">
-      <h2>Documentos</h2>
-      <ul>
-        <li>Informe técnico</li>
-        <li>Presentación</li>
-        <li>Evidencias</li>
-      </ul>
+    <section class="grid" aria-label="Accesos a secciones">
+      <article class="card">
+        <h3>Mapa del portafolio</h3>
+        <p>Usa estas páginas para navegar por las 5 secciones requeridas.</p>
+        <ul class="list">
+          <li><a href="producto.html">Sección 1:</a> Producto mejorado + reflexión (300–350 palabras).</li>
+          <li><a href="ciudadania.html">Sección 2:</a> Deber + definición + comparación (300–350 palabras).</li>
+          <li><a href="valores.html">Sección 3:</a> Tres valores esenciales + aplicación en el servicio.</li>
+          <li><a href="compromisos.html">Sección 4:</a> Dos compromisos + indicadores + 4 acciones mínimas.</li>
+          <li><a href="video.html">Sección 5:</a> Video carta (storytelling) + enlace YouTube.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Checklist final</h3>
+        <div class="columns">
+          <div class="placeholder">
+            <!-- TODO: Pega aquí tus comprobaciones rápidas antes de entregar -->
+            <strong>Antes de entregar:</strong>
+            <ul class="list">
+              <li>Textos de 300–350 palabras donde aplica.</li>
+              <li>Conexión explícita con experiencia de servicio en cada sección.</li>
+              <li>Enlaces funcionando (incluye YouTube).</li>
+              <li>Imágenes permitidas (sin rostros de beneficiarios, sin logos institucionales).</li>
+            </ul>
+          </div>
+          <div class="placeholder">
+            <!-- TODO: Si quieres, añade aquí un resumen de 5–6 líneas del aprendizaje más importante -->
+            <strong>Resumen ejecutivo:</strong>
+            <p style="margin:8px 0 0;">
+              <!-- TODO: resumen -->
+            </p>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Email o enlace relevante.</p>
-    </section>
-  </body>
+    <footer class="footer">
+      <span>Última actualización: <!-- TODO: fecha --></span>
+      <span><a href="video.html">Ir a video carta</a></span>
+    </footer>
+  </div>
+</body>
 </html>
