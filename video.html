@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video carta · E-portafolio PASEC</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <h1>Sección 5 · Video carta (10 años)</h1>
+        <p><!-- TODO: Nombre completo · Carrera · Semestre --></p>
+      </div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="producto.html">Producto</a>
+        <a href="ciudadania.html">Ciudadanía</a>
+        <a href="valores.html">Valores</a>
+        <a href="compromisos.html">Compromisos</a>
+        <a class="active" href="video.html">Video carta</a>
+      </nav>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Video carta en YouTube</h3>
+        <p class="meta">
+          <span class="badge">Formato storytelling</span>
+          <span class="badge">Sin rostros de beneficiarios</span>
+          <span class="badge">Audio claro + edición</span>
+        </p>
+
+        <hr class="sep" />
+
+        <div class="video" aria-label="Video de YouTube embebido">
+          <!-- Reemplaza VIDEO_ID con el id real del video de YouTube.
+               Ejemplo: si el link es https://www.youtube.com/watch?v=dQw4w9WgXcQ
+               el VIDEO_ID es: dQw4w9WgXcQ -->
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Video carta a 10 años"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div style="margin-top:12px;" class="placeholder">
+          <p><strong>Enlace directo (por si el embed falla):</strong></p>
+          <p>
+            <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+              Abrir el video en YouTube
+            </a>
+          </p>
+        </div>
+
+        <hr class="sep" />
+
+        <div class="placeholder">
+          <p><strong>Datos obligatorios mencionados en el video:</strong></p>
+          <ul class="list">
+            <li>Nombre completo, carrera y semestre.</li>
+            <li>Organización seleccionada.</li>
+            <li>Grupo con el que realizaste el servicio (niños, adolescentes, adultos mayores, etc.).</li>
+          </ul>
+          <p style="margin-top:10px;"><strong>Preguntas opcionales elegidas (mínimo 2):</strong></p>
+          <p><!-- TODO: indica aquí cuáles elegiste, solo como referencia --></p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <span><a href="index.html">Volver a inicio</a></span>
+      <span><a href="compromisos.html">← Volver a compromisos</a></span>
+    </footer>
+  </div>
+</body>
+</html>
