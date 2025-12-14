@@ -28,14 +28,14 @@
         <h3>Video Carta en YouTube</h3>
  
 <div class="video" aria-label="Video de YouTube embebido">
-      <iframe
-        id="yt-player"
-        src="https://www.youtube.com/embed/KMaxazwo6g8?enablejsapi=1&autoplay=1&mute=1&rel=0"
-        title="Video carta a 10 años"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </div>
+  <iframe
+    id="yt-player"
+    src="https://www.youtube.com/embed/KMaxazwo6g8?enablejsapi=1&autoplay=1&mute=1&rel=0"
+    title="Video carta para mí en 10 años"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
     <div style="margin-top:12px;" class="placeholder">
       <p><strong>Enlace directo:</strong></p>
@@ -77,19 +77,23 @@
 
       </article>
     </section>
+    
 <script src="https://www.youtube.com/iframe_api"></script>
+
 <script>
   let player;
 
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
       events: {
-        onReady: (event) => {
-          event.target.setPlaybackRate(1.25);
-          event.target.playVideo();
-        }
+        'onReady': onPlayerReady
       }
     });
+  }
+
+  function onPlayerReady(event) {
+    event.target.setPlaybackRate(1.25);
+    event.target.playVideo();
   }
 </script>
     <footer class="footer">
