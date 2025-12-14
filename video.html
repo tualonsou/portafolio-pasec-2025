@@ -27,27 +27,24 @@
       <article class="card">
         <h3>Video Carta en YouTube</h3>
  
+<div class="video" aria-label="Video de YouTube embebido">
+      <iframe
+        id="yt-player"
+        src="https://www.youtube.com/embed/KMaxazwo6g8?enablejsapi=1&autoplay=1&mute=1&rel=0"
+        title="Video carta a 10 años"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-        <div class="video" aria-label="Video de YouTube embebido">
-          <!-- Reemplaza VIDEO_ID con el id real del video de YouTube.
-               Ejemplo: si el link es https://www.youtube.com/watch?v=dQw4w9WgXcQ
-               el VIDEO_ID es: dQw4w9WgXcQ -->
-          <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="Video carta a 10 años"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <div style="margin-top:12px;" class="placeholder">
-          <p><strong>Enlace directo:</strong></p>
-          <p>
-            <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
-              Abrir el video en YouTube
-            </a>
-          </p>
-        </div>
+    <div style="margin-top:12px;" class="placeholder">
+      <p><strong>Enlace directo:</strong></p>
+      <p>
+        <a href="https://www.youtube.com/watch?v=KMaxazwo6g8" target="_blank" rel="noopener">
+          Abrir el video en YouTube
+        </a>
+      </p>
+    </div>
 
         <hr class="sep" />
 
@@ -66,7 +63,21 @@
         </div>
       </article>
     </section>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  let player;
 
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('yt-player', {
+      events: {
+        onReady: (event) => {
+          event.target.setPlaybackRate(1.25);
+          event.target.playVideo();
+        }
+      }
+    });
+  }
+</script>
     <footer class="footer">
       <span><a href="index.html">Volver a inicio</a></span>
       <span><a href="compromisos.html">← Volver a compromisos</a></span>
